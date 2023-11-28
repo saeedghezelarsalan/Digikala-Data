@@ -1,11 +1,12 @@
 {
-  "name": "data",
+  "name": "json-server-vercel",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Deploy JSON Server to Vercel",
+  "main": "api/server.js",
   "scripts": {
-    "start": "npx json-server ./db.json --watch --port 3001"
+    "start": "node api/server.js"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
 }
